@@ -3,6 +3,7 @@
     require_once __DIR__.'/../src/RepeatCounter.php';
 
     $app = new Silex\Application();
+
     $app['debug'] = true;
 
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
@@ -17,9 +18,11 @@
     });
 
     $app->get("/results", function() use ($app) {
+        //Get info from form
         $new_search= new RepeatCounter;
         $count = $new_search->countRepeats($_GET['word'], $_GET['phrase']);
         return $app ['twig']->render('results.html.twig', array('count' => $count));
     });
+    
     return $app;
 ?>
