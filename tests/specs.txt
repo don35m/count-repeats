@@ -1,0 +1,20 @@
+1. A user enters "at" and "at the house" and it returns 1.
+    Input: "at", "at the house"
+    Output: 1
+
+2. A user enters "at" and "at the house at pauls" and it returns 2.
+
+    Input: "at", "at the house at pauls"
+    Output: 2
+
+3. A user enters  "at" and "At the house at pauls" to check for case
+   sensitive.
+
+    Input: "at"
+    Output: 2
+
+4. A user enters "at" and "At the house at pauls we went to get that"
+   to check for word inside other words.
+
+    Input: "at"
+    Output: 2

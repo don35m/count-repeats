@@ -11,7 +11,7 @@ _Lets user input a single word and in a second text box a phrase. The add will d
 ## Setup
 
 * _Set up composer with Silex, Twig, and phpunit._
-* _Clone this repository. _
+* _Clone this repository._
 * _Start server in web directory._
 * _Open web browser to localhost:8000/_
 
@@ -20,10 +20,10 @@ _Lets user input a single word and in a second text box a phrase. The add will d
 
 ## Technologies Used
 
-_Silex
-Twig
-Php
-Php Unit
+_Silex,
+Twig,
+Php,
+PhpUnit, and
 HTML_
 
 ### Legal
