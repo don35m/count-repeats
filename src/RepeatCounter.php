@@ -2,18 +2,29 @@
 
     class RepeatCounter
     {
-        function wordCountArray($phrase, $word){
+        function countRepeats($user_word, $user_phrase) {
 
           $count = 0;
 
-          foreach ($word as $substring) {
-            $count += substr_count($phrase, $substring);
-          }
+          $user_phrase = strtolower($user_phrase);
+          $user_word = strtolower($user_word);
 
+          $phrase_array = array();
+
+          $phrase_array = explode(" ", $user_phrase);
+
+
+
+          foreach ($phrase_array as $word) {
+              if($word == $user_word){
+                  $count = $count + 1;
+              }
+              else {
+
+              $count = $count + 0;
+            }
+        }
           return $count;
-          //$word = "at";
-          //$phrase = "at the house";
-          //echo substr_count($phrase, $word);
         }
 
     }
